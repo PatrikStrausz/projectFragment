@@ -112,4 +112,10 @@ public class Fragment {
     public String toString() {
         return numerator + " / " + denominator;
     }
+
+    public MixedNumber getMixedNumber(){
+        int value = numerator/denominator ;
+        Fragment f = new Fragment(numerator%denominator, denominator);
+        return  new MixedNumber(value, f);
+    }
 }
