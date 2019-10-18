@@ -8,7 +8,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Fragment fragment = new Fragment(32,48);
+       /* Fragment fragment = new Fragment(32,48);
 
         System.out.println(fragment.toString());
         fragment.changeToBasicShape();
@@ -51,6 +51,30 @@ public class Main {
 
         f6 = math.subb(f8,f9);
         System.out.println( f6.toString());
+*/
+
+        Rectangle rect = new Rectangle(12,5);
+        System.out.println("Diagonale is: " +rect.calcDiagonale());
+        rect.printRectangle();
+
+        rect.setCharacter('*');
+
+        rect.setFill(false);
+        rect.showRectangle();
+        rect.printRectangle();
+
+
+        rect.setFill(true);
+        rect.showRectangle();
+        rect.printRectangle();
+
+
+     Circle circle = new Circle(5);
+        System.out.println("Circle area = " +circle.calcArea());
+        System.out.println("Circle perimeter = "+circle.calcPerimeter());
+        System.out.println(circle.toString());
+
+
 
     }
 
